@@ -1,27 +1,17 @@
 package com.company;
-public abstract class Shape
-{
-    private String type;
-    public Shape(String type)
-    {
-        this.type = type;
-    }
-    public abstract double getArea();
-    public abstract double getPerimeter();
-    public String toString()
-    {
-        return "I am a " + type + ".";
-    }
-}
+
+
+import ETriangle.ETriangle;
+
+import java.awt.*;
 
 public class Main {
 
     public static void main(String[] args) {
-	Shape shape1 = new Rectangle();
-	Shape shape2 = new Etriangle();
-	Shape shape3 = new Circle ();
-	Shape shape4 = new RPentagon();
+	Shape shape1 = new Rectangle(3,2);
+	Shape shape2 = new ETriangle(3);
+	Shape shape4 = new RPentagon(3);
 	System.out.println(shape4);
-	System.out.println()// write your code here
+	System.out.println();// write your code here
     }
 }
